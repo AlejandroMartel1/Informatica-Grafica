@@ -1,3 +1,5 @@
+· Autoría: [Alejandro José Martel Torres](https://github.com/AlejandroMartel1)     - Acceso directo al proyecto: [CodeSandbox](https://codesandbox.io/p/sandbox/practica-4-forked-3rm42c)
+
 # Laberinto 3D
 
 En esta cuarta práctica partimos del desarrollo de un cubo sobre una rejilla cuadriculada que forma el suelo. Sobre ese plano podemos desplazarnos en dos direcciones, sin rotar el ángulo de vista, como se ve en las siguientes imágenes:
