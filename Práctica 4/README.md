@@ -148,7 +148,7 @@ Al caer, los pies se ajustan a la altura de la superficie sobre la que aterriza.
 
 
 <p align="center">
-  <img src="img/laberinto-movimiento.gif" width="50%" alt="Vista inicial del jugador en el laberinto">
+  <img src="img/Laberinto-movimiento.gif" width="50%" alt="Vista inicial del jugador en el laberinto">
   <br>
   <em> Animación gráfica del laberinto desarrollado, saltando sobre los cubos. </em>
 </p>
