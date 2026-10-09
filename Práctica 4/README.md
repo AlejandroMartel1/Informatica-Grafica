@@ -1,4 +1,4 @@
-· Autoría: [Alejandro José Martel Torres](https://github.com/AlejandroMartel1)     - Acceso directo al proyecto: [CodeSandbox](https://codesandbox.io/p/sandbox/practica-4-forked-3rm42c) -Acceso a la vista de jugador: [PlayerView](https://3rm42c.csb.app/)
+· Autoría: [Alejandro José Martel Torres](https://github.com/AlejandroMartel1)     - Acceso directo al proyecto: [CodeSandbox](https://codesandbox.io/p/sandbox/practica-4-forked-3rm42c) 
 
 # Laberinto 3D
 
