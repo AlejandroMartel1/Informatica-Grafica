@@ -4,4 +4,4 @@ Este repositorio contiene el desarrollo, código y justificación de las prácti
 ## Estructura del proyecto
 El repositorio está organizado en carpetas individuales para cada entrega:
 
-* **[P4](./P4)**: Proyecciones y visibilidad.
+- [Práctica 4](./Práctica%204): Proyecciones y visibilidad.
