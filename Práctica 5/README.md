@@ -52,12 +52,15 @@ Se usan los shaders del apartado *"Sombreado de Phong en el fragment shader"* de
 ```
 color = Iambiente + Idifusa + Iespecular
 ```
-
+<div align="center">
+      
 | Componente | Cálculo |
 |---|---|
 | Difusa | `max(N · L, 0) · materialDifuso` |
 | Especular | `max(R · V, 0)^shininess · materialEspecular`, con `R = 2N(N·L) − L` |
 | Ambiente | `0.3 · materialDifuso` |
+
+</div>
 
 El resultado se limita a 1 con `min(fragColor, vec4(1,1,1,1))`.
 
