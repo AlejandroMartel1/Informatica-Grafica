@@ -1,4 +1,4 @@
-· Autor: [Alejandro José Martel Torres](https://github.com/AlejandroMartel1)     - Acceso directo al proyecto: [CodeSandbox](ENLACE_CODESANDBOX)
+· Autor: [Alejandro José Martel Torres](https://github.com/AlejandroMartel1)     - Acceso directo al proyecto: [CodeSandbox](https://codesandbox.io/p/sandbox/eager-knuth-t7qp3w)
 
 # Cables submarinos de internet
 
@@ -24,7 +24,7 @@ En esta práctica se muestra la red mundial de cables submarinos de telecomunica
 
 Los datos proceden de [Submarine Cable Map](https://www.submarinecablemap.com), de TeleGeography, que publica de forma abierta el trazado de los cables y la información de cada uno. Como en los ejemplos del guion, los datos no se descargan durante la ejecución, sino que se obtienen previamente y se guardan en la carpeta `src/`.
 
-Para ello se ha preparado el script de Python con ayuda de Claude `descarga_cables.py`, que hace las mismas peticiones que la web realiza a su API (`/api/v3/...`) y genera tres archivos:
+Para ello se ha preparado el script de Python con ayuda de Claude `descarga_cables.py`, que hace las mismas peticiones que la web realiza a su API  y genera tres archivos:
 
 <div align="center">
 
@@ -36,9 +36,7 @@ Para ello se ha preparado el script de Python con ayuda de Claude `descarga_cabl
 
 </div>
 
-Los dos primeros se guardan tal cual. El tercero se construye recorriendo los `id` de `cable-geo.json` y pidiendo la ficha individual de cada cable (`/api/v3/cable/<id>.json`), de la que solo se conservan los campos que usa la visualización (`rfs`, `rfs_year`, `length`, `owners`, `is_planned` y los nombres de los amarres). Entre petición y petición se espera 0,15 s para no saturar el servidor, y cada petición se reintenta hasta tres veces si falla.
-
-El `id` de cada cable es la clave que une los archivos: en el script se usa `info[id]` para asociar a cada trazado su año, longitud y propietarios.
+Los dos primeros se guardan tal cual. El tercero se construye recorriendo los `id` de `cable-geo.json` y pidiendo la ficha individual de cada cable (`/api/v3/cable/<id>.json`), de la que solo se conservan los campos que usa la visualización (`rfs`, `rfs_year`, `length`, `owners`, `is_planned` y los nombres de los amarres). El `id` de cada cable es la clave que une los archivos: en el script se usa `info[id]` para asociar a cada trazado su año, longitud y propietarios.
 
 
 ## Decisiones de desarrollo
@@ -83,9 +81,7 @@ El control *Año* muestra solo los cables que ya estaban en servicio ese año. C
 
 ### Pulsos de datos
 
-Por cada cable circulan puntos de luz, en mayor número cuanto más largo es el cable (cuatro por unidad de longitud). Todos forman un único objeto `Points` con mezcla aditiva (`AdditiveBlending`) y una textura circular con degradado creada con un `canvas`, de forma que parecen luz en lugar de puntos sólidos.
-
-Para que avancen a velocidad constante, la clase `Polilinea` guarda la longitud acumulada de cada tramo y su método `punto(u)` devuelve la posición a una fracción `u` de su recorrido, buscando el tramo correspondiente con una búsqueda binaria. 
+Por cada cable circulan puntos de luz, en mayor número cuanto más largo es el cable (cuatro por unidad de longitud). Todos forman un único objeto `Points` con mezcla aditiva (`AdditiveBlending`) y una textura circular con degradado creada con un `canvas`, de forma que parecen luz en lugar de puntos sólidos. Además, para que avancen a velocidad constante, la clase `Polilinea` guarda la longitud acumulada de cada tramo y su método `punto(u)` devuelve la posición a una fracción `u` de su recorrido, buscando el tramo correspondiente con una búsqueda binaria. 
 
 
 ### Haz de luz
@@ -126,7 +122,7 @@ La cámara se controla con `OrbitControls`, con amortiguación (`enableDamping`)
 
 ## Vídeo y animación representativa
 
-Vídeo con la ejecución de la tarea: [youtube](ENLACE_VIDEO)
+La demostración del proyecto se puede encontrar en línea a través de [youtube](https://youtu.be/Mb9K3X4yRD0).
 
 <p align="center">
   <img src="images/wires_animation.gif" width="80%" alt="Animación de la línea temporal y el haz de luz">
@@ -148,6 +144,6 @@ Vídeo con la ejecución de la tarea: [youtube](ENLACE_VIDEO)
   - [OrbitControls](https://threejs.org/docs/#examples/en/controls/OrbitControls)
 - Datos:
   - Trazados y fichas de los cables: [Submarine Cable Map (TeleGeography)](https://www.submarinecablemap.com)
-  - Cables de telecomunicaciones en Europa: [EMODnet Human Activities](https://emodnet.ec.europa.eu/human-activities)
 - Texturas:
   - Tierra de noche: [three-globe](https://github.com/vasturiano/three-globe) (`earth-dark.jpg`)
+
