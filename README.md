@@ -6,3 +6,5 @@ El repositorio está organizado en carpetas individuales para cada entrega:
 
 - [Práctica 4:](./Práctica%204) Proyecciones y visibilidad.
 - [Práctica 5:](./Práctica%205) Iluminación local.
+- [Práctica 6:](./Práctica%206) Sistema planetario.
+- [Práctica 7:](./Práctica%207) Datos geográficos.
