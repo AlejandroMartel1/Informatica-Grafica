@@ -8,3 +8,4 @@ El repositorio está organizado en carpetas individuales para cada entrega:
 - [Práctica 5:](./Práctica%205) Iluminación local.
 - [Práctica 6:](./Práctica%206) Sistema planetario.
 - [Práctica 7:](./Práctica%207) Datos geográficos.
+- [Práctica 8:](./Práctica%208) Desarrollo de un shader.
